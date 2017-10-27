@@ -51,3 +51,4 @@ INSERT INTO item_info_transaction(item_name, item_price, item_stock, picture) VA
 
 INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("internous", "internous01", "test");
 
+INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("aaa", "aaa", "tester1");

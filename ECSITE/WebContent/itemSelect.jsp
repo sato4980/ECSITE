@@ -4,15 +4,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<title>Login画面</title>
+<meta charset="utf-8">
+<title>BuyItemComplate画面</title>
 <style type="text/css">
+
 body {
 	margin: 0;
 	padding: 0;
@@ -21,13 +22,14 @@ body {
 	font-family: Verdana, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #333;
-	background-image:url(images/haikei.jpg);
+	background: #fff;
 }
 
 table {
 	text-align: center;
 	margin: 0 auto;
 }
+
 
 #top {
 	width: 780px;
@@ -40,7 +42,6 @@ table {
 	height: 80px;
 	background-image: url(images/header2.jpg);
 }
-
 
 #main {
 	width: 100%;
@@ -57,19 +58,16 @@ table {
 </style>
 </head>
 <body>
-	<div id="header">
+
+<div id="header">
 		<div id="pr"></div>
 	</div>
 	<div id="main">
 		<div id="top">
-			<p>Login</p>
+			<p>商品選択</p>
 		</div>
 		<div>
-			<h3>商品を購入する際にはログインをお願いします。</h3>
 			<s:form action="LoginAction">
-			<p>ユーザーIDとパスワードを入れて下さい</p>
-				<s:textfield name="loginUserId" />
-				<s:password name="loginPassword" />
 				<p>商品を選択して下さい。</p>
 				<select name="id">
 					<option value="1">スタンダードセット</option>
@@ -80,19 +78,12 @@ table {
 					<option value="6">ゴブリンvsノーム</option>
 					<option value="7">旧神のささやき</option>
 				</select>
-				<s:submit value="ログイン" />
+				<s:submit value="購入" />
 
 
 			</s:form>
 
-			<br/>
-
-<div id="text-link">
-				<p>新規ユーザー登録は<a href='<s:url action="UserCreateAction" />'>こちら</a></p>
-				<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
-
 			</div>
-		</div>
 	</div>
 	<div id="footer">
 		<div id="pr"></div>

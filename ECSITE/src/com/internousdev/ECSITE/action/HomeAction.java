@@ -2,11 +2,8 @@ package com.internousdev.ECSITE.action;
 
 import java.util.Map;
 
-import org.apache.struts2.interceptor.SessionAware;
-
 import com.internousdev.ECSITE.dao.BuyItemDAO;
 import com.internousdev.ECSITE.dto.BuyItemDTO;
-import com.opensymphony.xwork2.ActionSupport;
 
 public class HomeAction extends ActionSupport implements SessionAware {
 

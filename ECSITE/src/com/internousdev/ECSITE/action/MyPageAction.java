@@ -5,11 +5,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.apache.struts2.interceptor.SessionAware;
-
 import com.internousdev.ECSITE.dao.MyPageDAO;
 import com.internousdev.ECSITE.dto.MyPageDTO;
-import com.opensymphony.xwork2.ActionSupport;
 
 public class MyPageAction extends ActionSupport implements SessionAware {
 	public Map<String, Object> session;
@@ -24,10 +21,11 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 			return ERROR;
 		}
 		if (deleteFlg == null) {
-			String item_transaction_id = session.get("id").toString();
+			//String item_transaction_id = session.get("id").toString();
 			String user_master_id = session.get("login_user_id").toString();
 
-			myPageList = myPageDAO.getMyPageUserInfo(item_transaction_id, user_master_id);
+			myPageList = myPageDAO.getMyPageUserInfo(user_master_id);
+			//myPageList = myPageDAO.getMyPageUserInfo(item_transaction_id, user_master_id);
 			Iterator<MyPageDTO> iterator = myPageList.iterator();
 			if (!(iterator.hasNext())) {
 				myPageList = null;

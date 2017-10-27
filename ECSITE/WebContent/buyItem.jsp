@@ -25,6 +25,7 @@ body {
 	background: #fff
 }
 
+
 table {
 	text-align: center;
 	margin: 0 auto;
@@ -77,7 +78,7 @@ table {
 					<tr>
 					<td><span>商品写真</span></td>
 					<td>
-					<img alt="" src="<s:property value="session.picture" />"></td>
+					<img alt="" src="<s:property value="session.picture" />" width="400" height="250" ></td>
 					</tr>
 					<tr>
 						<td><span>値段</span></td>

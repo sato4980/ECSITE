@@ -12,9 +12,9 @@
 
 		<action name="HomeAction" class="com.internousdev.ECSITE.action.HomeAction" method="execute">
 			<!--  <result name="login">login.jsp</result> -->
-			<result name="login">itemSelect.jsp</result>
+			<result name="login">login.jsp</result>
 			<!-- <result name="success">buyItem.jsp</result> -->
-			<result name="success">itemSelect.jsp</result>
+			<result name="success">login.jsp</result>
 		</action>
 
 		 <action name="LoginAction" class="com.internousdev.ECSITE.action.LoginAction" method="execute">

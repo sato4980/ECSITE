@@ -22,6 +22,7 @@ body {
 	font-size: 12px;
 	color: #333;
 	background-image:url(images/haikei.jpg);
+	background-size:cover
 }
 
 table {
@@ -53,6 +54,16 @@ table {
 	height: 80px;
 	clear: both;
 	background-image: url(images/footer2.jpg);
+}
+
+.imageoption{
+width: 300px;
+height: 300px;
+}
+
+img{
+width: 300px;
+height: 300px;
 }
 </style>
 </head>

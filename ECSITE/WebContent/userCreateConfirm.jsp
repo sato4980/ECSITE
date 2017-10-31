@@ -25,6 +25,7 @@ body {
 	font-size: 12px;
 	color: #333;
 	background-image:url(images/create1.jpg);
+	background-size:cover
 
 }
 

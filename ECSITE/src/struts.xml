@@ -62,6 +62,7 @@
 			<result name="success">buyItemComplate.jsp</result>
 			<result name="back">buyItem.jsp</result>
 		</action>
+
 		<action name="BuyItemComplateAction"
 			class="com.internousdev.ECSITE.action.BuyItemComplateAction" method="execute">
 			<result name="success">home.jsp</result>

@@ -22,7 +22,8 @@ body {
 	font-family: Verdana, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #333;
-	background: #fff;
+	background-image:url(images/haikei.jpg);
+	background-size:cover
 }
 
 table {
@@ -55,6 +56,8 @@ table {
 	clear: both;
 	background-image: url(images/footer2.jpg);
 }
+
+
 </style>
 </head>
 <body>
@@ -78,7 +81,7 @@ table {
 					<option value="6">ゴブリンvsノーム</option>
 					<option value="7">旧神のささやき</option>
 				</select>
-				<s:submit value="購入" />
+		<s:submit value="購入" />
 
 
 			</s:form>

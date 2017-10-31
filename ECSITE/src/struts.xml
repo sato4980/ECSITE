@@ -6,55 +6,80 @@
 	<constant name="struts.devMode" value="true" />
 	<package name="com.internousdev.ECSITE.action" extends="struts-default">
 
-		<action name="GoHomeAction" class="com.internousdev.ECSITE.action.GoHomeAction" method="execute">
+		<action name="GoHomeAction" class="com.internousdev.ECSITE.action.GoHomeAction"
+			method="execute">
 			<result name="success">home.jsp</result>
 		</action>
 
-		<action name="HomeAction" class="com.internousdev.ECSITE.action.HomeAction" method="execute">
-			<!--  <result name="login">login.jsp</result> -->
+		<action name="HomeAction" class="com.internousdev.ECSITE.action.HomeAction"
+			method="execute">
+			<!-- <result name="login">login.jsp</result> -->
 			<result name="login">login.jsp</result>
 			<!-- <result name="success">buyItem.jsp</result> -->
 			<result name="success">login.jsp</result>
 		</action>
 
-		 <action name="LoginAction" class="com.internousdev.ECSITE.action.LoginAction" method="execute">
-			<result name="success">buyItem.jsp</result>
+		<action name="LoginAction" class="com.internousdev.ECSITE.action.LoginAction"
+			method="execute">
+			<!-- <result name="success">buyItem.jsp</result> -->
+			<result name="success">itemSelect.jsp</result>
 			<result name="error">login.jsp</result>
 		</action>
 
-		<action name="UserCreateAction" class="com.internousdev.ECSITE.action.UserCreateAction" method="execute">
+		<action name="SelectItem" class="com.internousdev.ECSITE.action.SelectItem"
+			method="execute">
+			<result name="success">buyItem.jsp</result>
+			<result name="error">buyItem.jsp</result>
+		</action>
+
+		<action name="UserCreateAction" class="com.internousdev.ECSITE.action.UserCreateAction"
+			method="execute">
 			<result name="success">userCreate.jsp</result>
 			<result name="back">login.jsp</result>
 		</action>
 
-		<action name="UserCreateConfirmAction" class="com.internousdev.ECSITE.action.UserCreateConfirmAction" method="execute">
+		<action name="UserCreateConfirmAction"
+			class="com.internousdev.ECSITE.action.UserCreateConfirmAction"
+			method="execute">
 			<result name="success">userCreateConfirm.jsp</result>
 			<result name="error">userCreate.jsp</result>
 		</action>
 
-		<action name="UserCreateComplateAction" class="com.internousdev.ECSITE.action.UserCreateComplateAction" method="execute">
+		<action name="UserCreateComplateAction"
+			class="com.internousdev.ECSITE.action.UserCreateComplateAction"
+			method="execute">
 			<result name="success">userCreateComplate.jsp</result>
 		</action>
 
-		<action name="BuyItemAction" class="com.internousdev.ECSITE.action.BuyItemAction" method="execute">
+		<action name="BuyItemAction" class="com.internousdev.ECSITE.action.BuyItemAction"
+			method="execute">
 			<result name="success">buyItemConfirm.jsp</result>
 			<result name="error">buyItem.jsp</result>
 		</action>
 
-		<action name="BuyItemConfirmAction" class="com.internousdev.ECSITE.action.BuyItemConfirmAction" method="execute">
+		<action name="BuyItemConfirmAction"
+			class="com.internousdev.ECSITE.action.BuyItemConfirmAction" method="execute">
 			<result name="success">buyItemComplate.jsp</result>
 			<result name="back">buyItem.jsp</result>
 		</action>
-		<action name="BuyItemComplateAction" class="com.internousdev.ECSITE.action.BuyItemComplateAction" method="execute">
+		<action name="BuyItemComplateAction"
+			class="com.internousdev.ECSITE.action.BuyItemComplateAction" method="execute">
 			<result name="success">home.jsp</result>
 		</action>
 
-		<action name="MyPageAction" class="com.internousdev.ECSITE.action.MyPageAction" method="execute">
+		<action name="ContinueBuy" class="com.internousdev.ECSITE.action.ContinueBuy"
+			method="execute">
+			<result name="success">itemSelect.jsp</result>
+		</action>
+
+		<action name="MyPageAction" class="com.internousdev.ECSITE.action.MyPageAction"
+			method="execute">
 			<result name="success">myPage.jsp</result>
 			<result name="error">error.jsp</result>
 		</action>
 
-		<action name="LogoutAction" class="com.internousdev.ECSITE.action.LogoutAction" method="execute">
+		<action name="LogoutAction" class="com.internousdev.ECSITE.action.LogoutAction"
+			method="execute">
 			<result name="success">login.jsp</result>
 		</action>
 	</package>

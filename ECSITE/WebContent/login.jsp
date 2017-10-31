@@ -70,7 +70,7 @@ table {
 			<p>ユーザーIDとパスワードを入れて下さい</p>
 				<s:textfield name="loginUserId" />
 				<s:password name="loginPassword" />
-				<p>商品を選択して下さい。</p>
+	<!-- >			<p>商品を選択して下さい。</p>
 				<select name="id">
 					<option value="1">スタンダードセット</option>
 					<option value="2">ノートブック</option>
@@ -79,7 +79,7 @@ table {
 					<option value="5">グランドトーナメント</option>
 					<option value="6">ゴブリンvsノーム</option>
 					<option value="7">旧神のささやき</option>
-				</select>
+				</select> -->
 				<s:submit value="ログイン" />
 
 

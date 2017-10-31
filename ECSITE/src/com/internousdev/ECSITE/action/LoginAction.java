@@ -4,9 +4,7 @@ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
-import com.internousdev.ECSITE.dao.BuyItemDAO;
 import com.internousdev.ECSITE.dao.LoginDAO;
-import com.internousdev.ECSITE.dto.BuyItemDTO;
 import com.internousdev.ECSITE.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -24,19 +22,19 @@ private String loginUserId;
 
 	private LoginDTO loginDTO = new LoginDTO();
 
-	private BuyItemDAO buyItemDAO = new BuyItemDAO();
+	//private BuyItemDAO buyItemDAO = new BuyItemDAO();
 
-	public String id;
+	//public String id;
 
 
 
-	public String getId() {
-		return id;
-	}
+	//public String getId() {
+		//return id;
+	// }
 
-	public void setId(String id) {
-		this.id = id;
-	}
+	//public void setId(String id) {
+	//	this.id = id;
+	//	}
 
 	public String execute() {
 
@@ -49,13 +47,13 @@ private String loginUserId;
 		if (((LoginDTO) session.get("loginUser")).getLoginFlg()) {
 			result = SUCCESS;
 
-			BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo(id);
+		//	BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo(id);
 
 			session.put("login_user_id", loginDTO.getLoginId());
-			session.put("id", buyItemDTO.getId());
-			session.put("buyItem_name", buyItemDTO.getItemName());
-			session.put("buyItem_price", buyItemDTO.getItemPrice());
-			session.put("picture",buyItemDTO.getPicture());
+		//	session.put("id", buyItemDTO.getId());
+		//	session.put("buyItem_name", buyItemDTO.getItemName());
+		//	session.put("buyItem_price", buyItemDTO.getItemPrice());
+		//	session.put("picture",buyItemDTO.getPicture());
 			return result;
 		}
 

@@ -70,6 +70,7 @@ table {
 			<p>購入手続きが完了致しました。</p>
 			<div>
 				<a href='<s:url action="MyPageAction" />'>マイページ</a><span>からの購入履歴の確認が可能です。</span>
+				<p>続けて商品を購入する場合は<a href='<s:url action="ContinueBuy" />'>こちら</a></p>
 				<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
 			</div>
 		</div>

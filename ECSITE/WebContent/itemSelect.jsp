@@ -67,7 +67,7 @@ table {
 			<p>商品選択</p>
 		</div>
 		<div>
-			<s:form action="LoginAction">
+			<s:form action="SelectItem">
 				<p>商品を選択して下さい。</p>
 				<select name="id">
 					<option value="1">スタンダードセット</option>

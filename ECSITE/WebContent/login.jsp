@@ -21,8 +21,8 @@ body {
 	font-family: Verdana, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #333;
-	background-image:url(images/haikei.jpg);
-	background-size:cover
+	background-image: url(images/haikei.jpg);
+	background-size: cover
 }
 
 table {
@@ -42,7 +42,6 @@ table {
 	background-image: url(images/header2.jpg);
 }
 
-
 #main {
 	width: 100%;
 	height: 500px;
@@ -56,14 +55,14 @@ table {
 	background-image: url(images/footer2.jpg);
 }
 
-.imageoption{
-width: 300px;
-height: 300px;
+.imageoption {
+	width: 300px;
+	height: 300px;
 }
 
-img{
-width: 300px;
-height: 300px;
+img {
+	width: 300px;
+	height: 300px;
 }
 </style>
 </head>
@@ -78,29 +77,21 @@ height: 300px;
 		<div>
 			<h3>商品を購入する際にはログインをお願いします。</h3>
 			<s:form action="LoginAction">
-			<p>ユーザーIDとパスワードを入れて下さい</p>
+				<p>ユーザーIDとパスワードを入れて下さい</p>
 				<s:textfield name="loginUserId" />
 				<s:password name="loginPassword" />
-	<!-- >			<p>商品を選択して下さい。</p>
-				<select name="id">
-					<option value="1">スタンダードセット</option>
-					<option value="2">ノートブック</option>
-					<option value="3">凍てつく王座の騎士団</option>
-					<option value="4">仁義なきガジェッツアン</option>
-					<option value="5">グランドトーナメント</option>
-					<option value="6">ゴブリンvsノーム</option>
-					<option value="7">旧神のささやき</option>
-				</select> -->
 				<s:submit value="ログイン" />
-
-
 			</s:form>
 
-			<br/>
+			<br />
 
-<div id="text-link">
-				<p>新規ユーザー登録は<a href='<s:url action="UserCreateAction" />'>こちら</a></p>
-				<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
+			<div id="text-link">
+				<p>
+					新規ユーザー登録は<a href='<s:url action="UserCreateAction" />'>こちら</a>
+				</p>
+				<p>
+					Homeへ戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a>
+				</p>
 
 			</div>
 		</div>

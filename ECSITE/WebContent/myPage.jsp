@@ -108,6 +108,7 @@ table {
 				<p>
 					Homeへ戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a>
 				</p>
+				<p>続けて商品を購入する場合は<a href='<s:url action="ContinueBuy" />'>こちら</a></p>
 				<p>
 					ログアウトする場合は<a href='<s:url action="LogoutAction" />'>こちら</a>
 				</p>
